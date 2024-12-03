@@ -15,7 +15,8 @@ const Header = () => {
   return (
     <>
       <h1>{HEADER_NAME}</h1>
-      <button onClick={handleBtnClick}>submit</button>
+      <button onClick={handleBtnClick}>Load user Data</button>
+      <button style={{marginLeft:'50px'}} onClick={()=> dispatch(setData([]))}>Clear Data</button>
     </>
   )
 }
